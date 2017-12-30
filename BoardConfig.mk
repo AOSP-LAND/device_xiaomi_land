@@ -17,6 +17,8 @@
 DEVICE_PATH := device/xiaomi/land
 
 TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
+TARGET_COMPILE_WITH_MSM_KERNEL := true
+ALLOW_MISSING_DEPENDENCIES=true
 
 # Architecture
 TARGET_ARCH := arm64
@@ -45,7 +47,7 @@ BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_PAGESIZE :=  2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --second_offset 0x00f00000 --tags_offset 0x00000100
-
+KERNEL_TOOLCHAIN_PREFIX := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-7.x/bin/aarch64-linux-gnu-
 TARGET_KERNEL_CONFIG := lineageos_land_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8937
 
@@ -214,7 +216,7 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/recovery/fstab.qcom
 TARGET_RIL_VARIANT := caf
 
 # SELinux
-include device/qcom/sepolicy/sepolicy.mk
+#include device/qcom/sepolicy/sepolicy.mk
 #BOARD_SEPOLICY_DIRS += \
 #    $(DEVICE_PATH)/sepolicy
 
