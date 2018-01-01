@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/nitrogen_land.mk
+    $(LOCAL_DIR)/aosp_land.mk
