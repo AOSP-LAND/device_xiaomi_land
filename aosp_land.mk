@@ -24,6 +24,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 # Inherit from land device
 $(call inherit-product, $(DEVICE_PATH)/device.mk)
 
+# Call QCOM Utils
+$(call inherit-product, $(DEVICE_PATH)/utils.mk)
+
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := land
 PRODUCT_MANUFACTURER := Xiaomi
