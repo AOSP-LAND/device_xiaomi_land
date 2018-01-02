@@ -324,7 +324,9 @@ PRODUCT_COPY_FILES += \
 
 # Snap
 PRODUCT_PACKAGES += \
-    SnapdragonCamera
+    SnapdragonCamera \
+    SnapdragonMusic \
+    Launcher3
 
 # USB HAL
 PRODUCT_PACKAGES += \

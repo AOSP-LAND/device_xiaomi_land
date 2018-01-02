@@ -72,7 +72,7 @@
          The user is forbidden from setting the brightness below this level. -->
     <integer name="config_screenBrightnessSettingMinimum">1</integer>
 
-<!--    <integer name="config_buttonBrightnessSettingDefault">0</integer> -->
+    <integer name="config_buttonBrightnessSettingDefault">0</integer>
 
     <!-- Is the notification LED intrusive? Used to decide if there should be a disable option -->
     <bool name="config_intrusiveNotificationLed">true</bool>
@@ -116,7 +116,7 @@
             64 - Volume rocker
          For example, a device with Home, Back and Menu keys would set this
          config to 7. -->
-<!--    <integer name="config_deviceHardwareKeys">83</integer> -->
+    <integer name="config_deviceHardwareKeys">83</integer>
 
     <!-- Control the behavior when the user long presses the home button.
             0 - Nothing
@@ -367,4 +367,21 @@
     
     <!-- Boolean indicating if current platform supports HFP inband ringing -->
     <bool name="config_bluetooth_hfp_inband_ringing_support">true</bool>
+
+    <string name="config_deviceKeyHandlerLib" translatable="false"></string>
+
+<!--    <string name="config_deviceKeyHandlerClass" translatable="false"></string>-->
+
+<!--    <integer name="config_longPressOnAppSwitchKeyBehavior">1</integer>    -->
+
+    <integer name="config_longPressOnBackBehavior">0</integer>
+
+<!--    <bool name="config_defaultToNavigationBar">false</bool>-->
+
+<!--    <integer name="config_doubleTapOnAppSwitchKeyBehavior">8</integer>-->
+
+<!--    <bool name="config_enableKeyHandler">true</bool>-->
+
+    <bool name="config_showNavigationBar">false</bool>
+
 </resources>
