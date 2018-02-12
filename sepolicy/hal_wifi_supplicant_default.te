@@ -1,1 +1,2 @@
 allow hal_wifi_supplicant_default debugfs_tracing:file { open write };
+allow hal_wifi_supplicant_default init:unix_dgram_socket sendto;

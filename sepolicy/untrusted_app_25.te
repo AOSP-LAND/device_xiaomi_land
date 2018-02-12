@@ -5,3 +5,6 @@ allow untrusted_app_25 sdcardfs:lnk_file { getattr open read };
 allow untrusted_app_25 mnt_media_rw_file:dir { getattr open read };
 allow untrusted_app_25 fuse:lnk_file { getattr open read };
 allow untrusted_app_25 unlabeled:file { getattr read open };
+allow untrusted_app_25 device:chr_file { ioctl };
+allow untrusted_app_25 rootfs:dir { read };
+allow untrusted_app_25 sysfs:file { read open };

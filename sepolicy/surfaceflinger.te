@@ -1,3 +1,4 @@
 #============= surfaceflinger ==============
+allow surfaceflinger device:chr_file { ioctl };
 allow surfaceflinger sysfs:file write;
 

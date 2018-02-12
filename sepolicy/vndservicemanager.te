@@ -1,0 +1,4 @@
+#============= vndservicemanager ==============
+allow vndservicemanager init:dir { search };
+allow vndservicemanager init:file { read open };
+allow vndservicemanager init:process { getattr };

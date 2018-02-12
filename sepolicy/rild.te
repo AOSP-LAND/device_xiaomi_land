@@ -1,1 +1,5 @@
+allow rild self:socket { ioctl };
+allow rild socket_device:sock_file { write };
+allow rild system_data_file:dir { write remove_name add_name };
+allow rild system_data_file:file { ioctl read lock open getattr };
 allow rild vendor_file:file { r_file_perms execute_no_trans ioctl };
