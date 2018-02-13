@@ -1,4 +1,7 @@
 #============= thermal-engine ==============
 allow thermal-engine file_contexts_file:file getattr;
-allow thermal-engine shell_exec:file execute;
-allow thermal-engine socket_device:sock_file create;
+allow thermal-engine shell_exec:file { read open execute };
+allow thermal-engine socket_device:sock_file { create relabelfrom relabelto setattr };
+allow thermal-engine thermal_socket:sock_file { relabelfrom relabelto };
+allow thermal-engine file_contexts_file:file { getattr open read };
+allow thermal-engine self:process { setfscreate };

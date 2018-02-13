@@ -32,3 +32,5 @@
 # Data files
 /data/misc/netmgr/log\.txt			u:object_r:netmgrd_data_file:s0
 
+# RFS
+/sys/kernel/debug/rmt_storage(/.*)? u:object_r:rmt_storage_debugfs_file:s0
