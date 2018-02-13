@@ -3,3 +3,4 @@ allow audioserver debugfs_tracing:file { open write };
 allow audioserver device:chr_file { ioctl };
 allow audioserver sysfs:dir { open read };
 allow audioserver sysfs:file { getattr open read };
+allow audioserver hal_perf_hwservice:hwservice_manager { find };
