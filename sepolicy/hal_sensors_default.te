@@ -1,3 +1,4 @@
+allow hal_sensors_default persist_file:file { open read };
 allow hal_sensors_default self:socket { read write ioctl create };
 allow hal_sensors_default sysfs:dir { read open };
 allow hal_sensors_default sysfs:file { read open };
