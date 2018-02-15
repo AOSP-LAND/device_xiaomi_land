@@ -8,3 +8,7 @@ allow priv_app persist_file:filesystem getattr;
 allow priv_app adsprpcd_file:filesystem getattr; 
 allow priv_app fsck_exec:lnk_file getattr;
 allow priv_app mkfs_exec:lnk_file getattr;
+
+
+type mkfs_exec, exec_type, file_type;
+
