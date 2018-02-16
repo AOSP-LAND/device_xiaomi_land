@@ -1,0 +1,2 @@
+#============= bluetooth ==============
+allow bluetooth netd_service:service_manager { find };
