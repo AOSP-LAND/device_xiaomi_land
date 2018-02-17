@@ -18,3 +18,4 @@ allow untrusted_app unlabeled:file { getattr read open };
 allow untrusted_app device:chr_file { ioctl };
 allow untrusted_app camera_prop:file read;
 
+allow untrusted_app rootfs:dir { read open };
